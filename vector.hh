@@ -17,7 +17,7 @@ class FloatVector {
 public:
         // Thanh vien 1
         FloatVector::FloatVector()
-    : _data(nullptr), _size(0), _capacity(0)
+    : _data(nullptr), _size(0), _capacity(0)//thanh vien 2 da sua roi 
 {
     _realloc(4);
 }
