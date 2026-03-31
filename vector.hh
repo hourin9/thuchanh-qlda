@@ -16,6 +16,11 @@
 class FloatVector {
 public:
         // Thanh vien 1
+        FloatVector::FloatVector()
+    : _data(nullptr), _size(0), _capacity(0)//thanh vien 2 da sua roi 
+{
+    _realloc(4);
+}
         FloatVector();  // Tao moi array _data bang new hoac malloc().
         void push(float n); // Them phan tu n vao cuoi vector.
         float pop();    // Xoa phan tu cuoi cung (phan tu duoc push
