@@ -16,13 +16,14 @@
 class FloatVector {
 public:
   // Thanh vien 1
-  FloatVector() : _data(nullptr), _size(0), _capacity(8) {
-    this->_data = new float[this->_capacity];
-  } // Tao moi array _data bang new hoac malloc().
   void push(float n); // Them phan tu n vao cuoi vector.
   float pop();        // Xoa phan tu cuoi cung (phan tu duoc push
                       // gan day nhat) roi tra ve gia tri phan tu do.
-
+  FloatVector() {
+    _data = nullptr;
+    _size = 0;
+    _capacity = 0;
+  }
   // Thanh vien 2
   float &operator[](size_t idx);
   float operator[](size_t idx) const;
@@ -65,3 +66,8 @@ private:
   float *_data;
   size_t _size, _capacity;
 };
+<<<<<<< HEAD
+=======
+
+
+>>>>>>> develop
